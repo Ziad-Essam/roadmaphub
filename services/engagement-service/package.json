@@ -1,0 +1,17 @@
+{
+  "name": "engagement-service",
+  "version": "1.0.0",
+  "private": true,
+  "description": "RoadmapHub Engagement Service (S2). Owner: Youssef Mohamed Salah (239650)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "@roadhub/shared": "1.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0"
+  }
+}

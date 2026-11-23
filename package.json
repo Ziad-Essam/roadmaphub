@@ -1,0 +1,23 @@
+{
+  "name": "roadmaphub",
+  "version": "1.0.0",
+  "private": true,
+  "description": "RoadmapHub: public product roadmap and feature voting platform (Team 22)",
+  "workspaces": [
+    "shared",
+    "services/roadmap-service",
+    "services/engagement-service",
+    "services/admin-service",
+    "gateway"
+  ],
+  "scripts": {
+    "start:roadmap": "npm run start -w services/roadmap-service",
+    "start:engagement": "npm run start -w services/engagement-service",
+    "start:admin": "npm run start -w services/admin-service",
+    "start:gateway": "npm run start -w gateway",
+    "test": "node --test --test-concurrency=1 tests/*.test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
